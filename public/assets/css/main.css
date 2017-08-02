@@ -683,6 +683,171 @@ a {
 .sec7 .right img {
   width: 100%; }
 
+.plan {
+  -webkit-box-shadow: inset 0 0 0 3px #0047BA, inset 0 0 0 4px #fff, 0 0 0 3px #fff;
+  box-shadow: inset 0 0 0 3px #0047BA, inset 0 0 0 4px #fff, 0 0 0 3px #fff;
+  padding: 30px 7%;
+  position: relative;
+  background-position: 70% bottom !important;
+  margin-bottom: 25px;
+  cursor: pointer; }
+  .plan:hover {
+    background-color: rgba(255, 255, 255, 0.3); }
+  .plan h2 {
+    font-size: 20px;
+    font-family: PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
+    font-weight: 600;
+    margin-bottom: 30px; }
+  .plan p {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-family: PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+    font-weight: 200;
+    line-height: 1.7; }
+    .plan p span {
+      opacity: 0.3; }
+  .plan .price {
+    position: absolute;
+    right: 7%;
+    top: 26px;
+    font-size: 26px;
+    font-family: PingFangTC-Ultralight, xingothic-tc, sans-serif, Microsoft JhengHei;
+    font-weight: 100; }
+
+.s9-nav {
+  margin: 25px auto;
+  max-width: 800px; }
+  .s9-nav .btn {
+    background-color: #FD4A0F;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 8px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 4px; }
+
+.sec9 img.title {
+  max-width: 300px;
+  margin-bottom: 50px; }
+
+.sec9 img {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto; }
+
+.sec9 .r-img {
+  position: relative;
+  margin-bottom: 70px; }
+  .sec9 .r-img p {
+    font-size: 17px;
+    opacity: .4;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7; }
+  .sec9 .r-img .mark {
+    position: absolute;
+    width: 200px;
+    line-height: 25px;
+    height: 25px;
+    padding: 0;
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 0;
+    -webkit-transform: translate3d(90%, -200%, 0);
+    transform: translate3d(90%, -200%, 0); }
+
+.sec9 .text span {
+  display: inline-block;
+  opacity: .3;
+  font-size: 14px;
+  margin: 5px 40px 5px 0; }
+
+.sec9 .text h3 {
+  margin-top: 17px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-family: PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-weight: 600;
+  letter-spacing: 1px; }
+
+.sec9 .text p {
+  font-size: 13px;
+  font-family: PingFangTC-Light, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.7;
+  max-width: 600px; }
+  .sec9 .text p b {
+    font-size: 17px; }
+
+.sec9 .text .btn {
+  position: relative;
+  display: inline-block;
+  background-color: #FD4A0F;
+  color: #0047BA;
+  font-family: PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-weight: 600;
+  line-height: 35px;
+  width: 600px;
+  margin-top: 40px;
+  height: 35px;
+  padding: 0 15px;
+  border-radius: 5px; }
+  .sec9 .text .btn b {
+    position: absolute;
+    right: 15px;
+    top: 0; }
+
+.sec9 .th, .sec9 .td {
+  font-size: 13px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .sec9 .th span, .sec9 .td span {
+    display: block;
+    opacity: 0.3;
+    font-size: 12px; }
+
+.sec9 .tr {
+  -webkit-box-shadow: inset 0 0 0 0.5px #fff, 0 0 0 0.5px #fff;
+  box-shadow: inset 0 0 0 0.5px #fff, 0 0 0 0.5px #fff;
+  padding: 15px 15px; }
+
+.sec9 .tr:nth-of-type(1) {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100px;
+  -ms-flex: 0 0 100px;
+  flex: 0 0 100px;
+  width: 100px; }
+
+.sec9 .tr:nth-of-type(4) {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 130px;
+  -ms-flex: 0 0 130px;
+  flex: 0 0 130px;
+  width: 130px; }
+
+.sec9 .tr:nth-of-type(2), .sec9 .tr:nth-of-type(3) {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 calc( 50% - 115px);
+  -ms-flex: 0 0 calc( 50% - 115px);
+  flex: 0 0 calc( 50% - 115px);
+  width: calc( 50% - 115px); }
+
+.sec9 .box {
+  position: relative;
+  padding-top: calc( 20% - 20px);
+  border-radius: 6px;
+  background-color: #FFF; }
+
 body {
   background-color: #0047BA;
   color: #fff; }
@@ -733,3 +898,13 @@ section, header {
     font-size: 17px;
     font-family: PingFangTC-Light, xingothic-tc, sans-serif, Microsoft JhengHei;
     font-weight: 300; }
+
+.mark {
+  vertical-align: middle;
+  line-height: 1;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 12px;
+  background-color: #FD4A0F;
+  color: #fff; }
