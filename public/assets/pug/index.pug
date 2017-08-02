@@ -14,9 +14,34 @@ html
     link(rel="stylesheet", href="/assets/css/main.css")
     link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
   body
+    
+    #call-to-action-btn
+      img(src="", alt="")
+
+    header
+      #header-slider
+        ul
+          li.img-bg-contain(style="background-image: url('/assets/img/main/header-s1.png')")
+          li.img-bg-contain(style="background-image: url('/assets/img/main/header-s2.png')")
+          li.img-bg-contain(style="background-image: url('/assets/img/main/header-s3.png')")
+          li.img-bg-contain(style="background-image: url('/assets/img/main/header-s4.png')")
+      .header-border
+        .top
+        .left
+        .right
+        .bottom
+        .left-top
+          img(src="/assets/img/main/header-l-t.svg", alt="")
+        .right-top
+          img(src="/assets/img/main/header-r-t.svg", alt="")
+        .left-bottom
+          img(src="/assets/img/main/header-l-b.svg", alt="")
+        .right-bottom
+          img(src="/assets/img/main/header-r-b.svg", alt="")
 
   script(src='//cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js')
   script(src='/assets/js/vendor/jquery-2.1.4.min.js')
+  script(src='/assets/js/vendor/slider.js')
   script(src='/assets/js/index.js')
             
 

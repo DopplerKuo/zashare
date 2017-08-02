@@ -1,10 +1,13 @@
-$(window).load(function() {
-	$(".menu-btn").click(function() {
-		$(this).toggleClass('active');
-		$('.nav-list').toggleClass('active');
+$(document).ready(function() {
+
+
+	$('#header-slider').unslider({
+		autoplay: true,
+		speed: 700,
+		delay: 4000,
+		infinite: true,
+		nav: false,
+		arrows: false
 	});
+	
 })
-
-
-
-
