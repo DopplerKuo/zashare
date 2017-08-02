@@ -9,5 +9,14 @@ $(document).ready(function() {
 		nav: false,
 		arrows: false
 	});
+
+	$('#s6-slider').unslider({
+		autoplay: true,
+		speed: 700,
+		delay: 4000,
+		infinite: true,
+		nav: false,
+		arrows: true
+	});
 	
 })
