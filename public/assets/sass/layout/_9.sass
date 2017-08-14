@@ -1,129 +1,83 @@
-.s9-nav
-	margin: 25px auto
-	max-width: 800px
-
-	.btn
-		background-color: $og
-		color: #fff
-		font-size: 12px
-		letter-spacing: 8px
-		text-align: center
-		line-height: 40px
-		border-radius: 4px
-
-
 .sec9
+	background-color: $db
 
-	img.title
-		max-width: 300px
-		margin-bottom: 50px
+	.section-title
+		background-color: $b
+		padding-bottom: 5%
+		padding-top: 6%
+		line-height: 1
 
-	img
-		display: block
-		max-width: 500px
-		margin: 0 auto
+.rw-block
+	display: flex;
+	justify-content: center
 
-	.r-img
+	.left
+		flex: 0 0 45%
+		width: 50%
 		position: relative
-		margin-bottom: 70px
+		margin-top: 2.5%
 
-		p
-			font-size: 17px
-			opacity: .4
-			max-width: 700px
-			margin: 0 auto
-			line-height: 1.7
+	.left > img
+		position: absolute
+		bottom: 10%
+		right: 30%
+		width: 50px
 
-		.mark
-			position: absolute
-			width: 200px
-			line-height: 25px
-			height: 25px
-			padding: 0
-			text-align: center
-			right: 0
-			left: 0
-			margin: auto
-			bottom: 0
-			transform: translate3d(90%, -200%, 0)
-
-	.text
-
-		span
-			display: inline-block
-			opacity: .3
-			font-size: 14px
-			margin: 5px 40px 5px 0
-
-		h3
-			margin-top: 17px
-			margin-bottom: 15px
-			font-size: 16px
-			font-family: $p600
-			font-weight: 600
-			letter-spacing: 1px
-
-		p
-			font-size: 13px
-			font-family: $p300
-			font-weight: 300
-			letter-spacing: 1px
-			line-height: 1.7
-			max-width: 600px
-
-			b
-				font-size: 17px
-
-		.btn
-			position: relative
-			display: inline-block
-			background-color: $og
-			color: $b;
-			font-family: $p600
-			font-weight: 600
-			line-height: 35px
-			width: 600px
-			margin-top: 40px
-			height: 35px
-			padding: 0 15px
-			border-radius: 5px
-
-			b 
-				position: absolute
-				right: 15px
-				top: 0
-
-
-	.th, .td
-		font-size: 13px
-		width: 100%;
-		display: flex
-		justify-content: center;
-
-		span
-			display: block
-			opacity: 0.3
-			font-size: 12px
-
-	.tr
-		box-shadow: inset 0 0 0 0.5px #fff, 0 0 0 0.5px #fff
-		padding: 15px 15px
-
-	.tr:nth-of-type(1)
-		flex: 0 0 100px
-		width: 100px
-
-	.tr:nth-of-type(4)
-		flex: 0 0 130px
-		width: 130px
-
-	.tr:nth-of-type(2), .tr:nth-of-type(3)
-		flex: 0 0 calc( 50% - 115px )
-		width: calc( 50% - 115px )
-
-
-	.box 
-		position: relative
-		padding-top: calc( 20% - 20px );
-		border-radius: 6px;
+	.right
+		flex: 0 0 50%
+		width: 50%
+		margin: 5% 0
 		background-color: #FFF
+		border-radius: 10px
+		padding: 30px 40px
+
+		h2
+			color: #003FB1
+			opacity: 1
+			font-family: $p600
+			font-weight: 600
+
+		h2.mark-l:after
+			position: relative
+			bottom: 3px
+			content: attr(data-mark)
+			font-size: 12px
+			background-color: #003FB1
+			color: #fff
+			text-align: center
+			padding: 3px 10px
+			margin-top: -5px
+			display: inline-block
+			border-radius: 30px
+			margin-left: 10px
+
+		p
+			color: $db
+			margin: 30px auto 60px
+			line-height: 1.7
+
+		.bottom
+			position: relative
+
+			.price
+				font-size: 34px
+				color: #003FB1
+
+				span
+					font-size: 12px
+					margin-left: 15px
+
+			a.buy-btn
+				position: absolute
+				right: 0;
+				top: 0;
+				background-color: $og
+				text-align: center
+				width: 125px
+				line-height: 40px
+				height: 40px
+				border-radius: 40px
+
+
+.rw-block.blue
+	background-color: $b

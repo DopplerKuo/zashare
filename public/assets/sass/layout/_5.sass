@@ -1,17 +1,84 @@
 .sec5
 
+	.time-line-block
+		display: flex
+		align-items: flex-start
+		justify-content: center
+
+	.time
+		font-size: 50px
+		line-height: 1
+		flex: 0 0 200px
+		width: 200px
+
 	.right
-		padding: 0 10%
+		position: relative
+		flex: 1 1 calc( 100% - 200px )
+		width: calc( 100% - 200px )
 
-	p 
-		line-height: 1.7
+		img
+			width: 100%
 
-	img
-		width: 152%;
+		.text-block
+			position: relative
+			z-index: 2
 
-	h3
-		color: $og
-		font-size: 20px
-		font-family: $p600;
-		font-weight: 600;
-		margin: 25px 0 10px
+			h2
+				font-size: 24px
+				opacity: 1
+				margin-bottom: 30px
+
+			p
+				line-height: 1.7
+
+	.tY
+		transform: translateY(-8%)
+
+	.last-time-line-block
+		img 
+			display: block
+			width: 70%
+			margin: 0 auto
+			transform: translateX(15%)
+
+		.section-title
+			padding-top: 10px
+
+			b
+				margin-top: 10px
+				margin-bottom: 50px
+
+
+.title-right-mark:after
+	content: attr(data-mark)
+	display: inline-block
+	font-size: 13px
+	padding: 2px 6px
+	margin-left: 15px
+	position: relative
+	top: -3px
+	background-color: $og
+	text-align: center
+	border-radius: 4px
+	color: $b
+
+
+.white-box
+	background-color: #FFF
+	border-radius: 10px
+	color: $b
+	text-align: center
+	padding: 30px 40px
+
+	h2
+		text-align: center
+		color: #003FB1
+		height: 70px
+		font-size: 24px
+		opacity: 1
+		font-family: $p600
+		font-weight: 600
+		margin-bottom: 30px
+
+	p
+		opacity: .5

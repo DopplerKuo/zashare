@@ -1,34 +1,70 @@
-.plan
-	box-shadow: inset 0 0 0 3px #{$b}, inset 0 0 0 4px #fff, 0 0 0 3px #fff
-	padding: 30px 7%
-	position: relative
-	background-position: 70% bottom!important;
-	margin-bottom: 25px
-	cursor: pointer
+.sec8
+	background-color: #FFF
 
-	&:hover
-		background-color: rgba(255, 255, 255, .3)
+	.section-title
+		background-color: $b
+		padding-bottom: 5%
+		padding-top: 6%
+		line-height: 1
+	
+	.intro-block
+		margin: 10% 0
 
-	h2
-		font-size: 20px
-		font-family: $p600
-		font-weight: 600
-		margin-bottom: 30px
+	.img img
+		width: 100%
 
-	p 
-		font-size: 15px
-		letter-spacing: 0.5px
-		font-family: $p200
-		font-weight: 200
-		line-height: 1.7
+	.text
 
-		span
-			opacity: 0.3
+		.h1
+			color: $db
 
-	.price
-		position: absolute
-		right: 7%
-		top: 26px
-		font-size: 26px
-		font-family: $p100
-		font-weight: 100
+		p, h2
+			color: $db
+			margin: 50px 0
+
+		.more-btn
+			background-color: $b
+			display: inline-block
+			width: 120px
+			text-align: center;
+			line-height: 40px;
+			height: 40px
+			border-radius: 5px
+
+	.intro-block:nth-child(n) .text
+		padding-left: 5%
+
+	.intro-block:nth-child(2n) .text
+		padding-left: 0
+		padding-right: 5%
+
+	.tb
+		box-shadow: 0 0 0 1px $db
+		margin-bottom: 40px
+
+		.tr
+		 display: flex;
+		 justify-content: center;
+
+		 .th
+		 	flex: 0 0 90px
+		 	width: 90px
+		 	padding: 20px
+		 	color: $db
+		 	box-shadow: inset -1px -1px 0 0 $db
+
+		 .td
+		 	flex: 1 1 calc( 100% - 90px )
+		 	width: calc( 100% - 90px )
+		 	padding: 20px
+		 	color: $db
+		 	box-shadow: inset 0px -1px 0 0 $db
+
+.tb-ker
+	.text
+		h2
+			margin-top: 10px
+			margin-bottom: 30px
+		p
+			margin-top: 0px
+			margin-bottom: 15px
