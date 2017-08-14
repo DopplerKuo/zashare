@@ -414,8 +414,8 @@ a {
   .header-border div {
     position: absolute; }
     .header-border div.left, .header-border div.top, .header-border div.right, .header-border div.bottom {
-      -webkit-box-shadow: inset 0 0 0 0.5px #fff;
-      box-shadow: inset 0 0 0 0.5px #fff; }
+      -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4); }
     .header-border div.left {
       width: 5px;
       left: 8px;
