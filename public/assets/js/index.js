@@ -23,12 +23,13 @@ $(document).ready(function() {
 	/// scroll
 	$(window).on('scroll resize', function() {
 		let $t = $(this).scrollTop()
-		let $h = $('#header').height()
+		let $h = $('#header').height() - 100
 
-		if ( $t >= $h ) {
+		if ( $t > $h ) {
 			$('#bar, #nav, #call-to-action-btn').addClass('calm_down')
 		} else {
 			$('#bar, #nav, #call-to-action-btn').removeClass('calm_down')
 		}
+
 	})
 })

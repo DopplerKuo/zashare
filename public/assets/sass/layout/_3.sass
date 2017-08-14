@@ -1,46 +1,32 @@
 .s3-scroll-block
-	height: 100vh
+	min-height: 50vh
 	position: relative
+	margin: 5% auto
 
 .s3-title
-	font-size: 36px
-	line-height: 1.3
-	font-family: $p600
-	font-weight: 600
+	line-height: 1.5
 	color: #fff
-	margin-top: 30px
+	font-size: 36px
+	text-align: center
 
-.s3-infos
-	position: absolute
-	left: 0
-	top: 0
-	font-size: 65px
-	line-height: 1.15
+.s3-info
+	font-size: 5vw
+	line-height: 1
 	font-family: $p600
 	font-weight: 600
 	color: #fff
 	opacity: .2
 	text-align: right
 
-	.s3-info
-		display: inline-block
-		text-align: left
-
-	.s3-info:nth-of-type(2)
-		width: 100%
-		margin-top: 30px
-
 .s3-scroll-block:nth-of-type(2)
 
-	.s3-infos
-		font-size: 52px
+	.s3-info
+		font-size: 10vw
+		text-align: left
 
-		b
-			font-size: 20px
-			margin-left: 20px
-
-		.s3-info:nth-of-type(1)
-			margin-top: 50px
+.s3-scroll-block:nth-of-type(3)
+	background-color: $db
+	max-width: 100%;
 
 .s3-cards
 	margin-top: 50px
@@ -67,6 +53,7 @@
 		width: calc( 100% - 110px )
 		margin-left: 15px
 		font-size: 17px
+		line-height: 1.4
 		letter-spacing: 1px
 		font-family: $p300
 		font-weight: 300
@@ -75,6 +62,11 @@
 		span
 			position: absolute
 			right: 50px
-			color: $og
+			color: #fff
+			opacity: .6
 			bottom: 0px
-			font-size: 14px
+			font-size: 12px
+
+
+.sec3-2
+	background-color: $db
