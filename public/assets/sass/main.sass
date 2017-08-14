@@ -7,6 +7,8 @@
 // ========= element =========
 @import 'element/btn' 
 @import 'element/unslider'
+@import 'element/bar'
+@import 'element/nav'
 // ========= layout =========
 @import 'layout/header'
 @import 'layout/2'
@@ -84,3 +86,27 @@ section, header
 	font-size: 12px
 	background-color: $og
 	color: #fff
+
+
+
+
+//// scroll sytle
+#call-to-action-btn, #bar, #nav
+	transition: .7s
+
+#call-to-action-btn.calm_down, #bar.calm_down, #nav.calm_down
+	transform: scale(0.9)
+	opacity: .6
+
+	&:hover
+		transform: scale(1)
+		opacity: 1
+
+#call-to-action-btn.calm_down
+	transform-origin: 100% 100%
+
+#bar.calm_down
+	transform-origin: 100% 0%
+
+#nav.calm_down
+	transform-origin: 0% 0%
