@@ -10,10 +10,16 @@
 	.intro-block
 		margin: 10% 0
 
+	.img
+		@media screen and (max-width: 500px)
+			order: -1
+
 	.img img
 		width: 100%
 
 	.text
+		@media screen and (max-width: 500px)
+			margin-bottom: 25px
 
 		.h1
 			color: $db
@@ -21,6 +27,8 @@
 		p, h2
 			color: $db
 			margin: 50px 0
+			@media screen and (max-width: 500px)
+				margin: 15px 0
 
 		.more-btn
 			background-color: $b
@@ -33,10 +41,14 @@
 
 	.intro-block:nth-child(n) .text
 		padding-left: 5%
+		@media screen and (max-width: 500px)
+			padding-left: 0%
 
 	.intro-block:nth-child(2n) .text
 		padding-left: 0
 		padding-right: 5%
+		@media screen and (max-width: 500px)
+			padding-right: 0%
 
 	.tb
 		box-shadow: 0 0 0 1px $db

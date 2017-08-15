@@ -6,16 +6,30 @@
 		padding-bottom: 5%
 		padding-top: 6%
 		line-height: 1
+		@media screen and (max-width: 500px)
+			font-size: 20px
+			line-height: 1.2
+			padding-bottom: 30px
+			padding-top: 30px
+
+
 
 .rw-block
 	display: flex;
 	justify-content: center
+	@media screen and (max-width: 500px)
+		flex-wrap: wrap
 
 	.left
 		flex: 0 0 45%
-		width: 50%
+		width: 45%
 		position: relative
 		margin-top: 2.5%
+
+		@media screen and (max-width: 500px)
+			flex: 0 0 100%
+			height: 200px
+			width: 100%
 
 	.left > img
 		position: absolute
@@ -30,6 +44,9 @@
 		background-color: #FFF
 		border-radius: 10px
 		padding: 30px 40px
+		@media screen and (max-width: 500px)
+			flex: 0 0 95%
+			width: 95%
 
 		h2
 			color: #003FB1
@@ -55,6 +72,10 @@
 			color: $db
 			margin: 30px auto 60px
 			line-height: 1.7
+			@media screen and (max-width: 500px)
+				margin: 15px auto 20px
+				font-size: 14px
+				line-height: 1.4
 
 		.bottom
 			position: relative
@@ -62,6 +83,9 @@
 			.price
 				font-size: 34px
 				color: #003FB1
+
+				@media screen and (max-width: 500px)
+					font-size: 20px
 
 				span
 					font-size: 12px
@@ -77,6 +101,12 @@
 				line-height: 40px
 				height: 40px
 				border-radius: 40px
+
+				@media screen and (max-width: 500px)
+					width: 90px
+					line-height: 30px
+					height: 30px
+					font-size: 13px
 
 
 .rw-block.blue

@@ -80,6 +80,8 @@ section, header
 	font-family: $p400
 	font-weight: 400
 	text-align: center
+	@media screen and (max-width: 500px)
+		font-size: 24px
 
 	b
 		display: block
@@ -88,6 +90,10 @@ section, header
 		font-weight: 300
 		opacity: .5
 		margin-top: 20px
+
+		@media screen and (max-width: 500px)
+			font-size: 17px
+			margin-top: 5px
 
 
 .mark
@@ -119,6 +125,10 @@ footer
 #call-to-action-btn, #bar, #nav
 	transition: .7s
 
+@media screen and (max-width: 992px)
+	#call-to-action-btn, #nav
+		display: none
+
 #call-to-action-btn.calm_down, #bar.calm_down, #nav.calm_down
 	transform: scale(0.9)
 	opacity: .6
@@ -136,3 +146,8 @@ footer
 
 #nav.calm_down
 	transform-origin: 0% 0%
+
+@media screen and (max-width: 992px)
+	#bar.calm_down
+		transform: translateY(0%)
+		opacity: 1
