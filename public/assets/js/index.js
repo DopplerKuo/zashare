@@ -88,13 +88,11 @@ $(document).ready(function() {
 	  duration    : 1000,
 	  distance		: '100px',
 	  origin      : 'left',
-	  delay				: 300,
 	});
 	sr.reveal('.reveal-right-500', {
 	  duration    : 1000,
 	  distance		: '100px',
 	  origin      : 'right',
-	  delay				: 300,
 	});
 
 })

@@ -1155,7 +1155,8 @@ body {
   background-color: #0047BA;
   color: #fff;
   font-family: PingFangTC-Regular, Noto Sans TC, sans-serif, Microsoft JhengHei;
-  font-weight: 400; }
+  font-weight: 400;
+  overflow-x: hidden; }
 
 section, header {
   position: relative;
