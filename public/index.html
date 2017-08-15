@@ -17,11 +17,11 @@
   <body>
     <div id="bar">
       <div class="bar-chart-wrap">
-        <div class="b-pg-main" style="width: 56%;"></div>
+        <div class="b-pg-main" :style="'width:' + ticketObj.progressPercentage"></div>
         <div class="b-pg-bg"></div>
       </div>
       <div class="text">
-        已募資<b>56%</b>學生證倒數<b>1000/2017</b>張
+        已募資<b>{{ ticketObj.progressPercentage }}</b>學生證倒數<b>{{ 2017 - ticketObj.count }}/2017</b>張
         
       </div>
     </div>
@@ -81,10 +81,8 @@
               但我們仍然陷在僵化教育的困境中?
             </h3>
           </div>
-          <div class="s3-info">
-            285,300,000,000<br>
-            4000,000,000<br>
-            50,000,000,000<br>
+          <div class="s3-info LatinaEssential" style="text-align: left;">
+            285,300,000,000<br>4000,000,000<br>50,000,000,000<br>
             
             
           </div>
@@ -191,7 +189,7 @@
           <line fill="none" stroke="#FFF" stroke-dasharray="5" x1="0" y1="0" x2="100%" y2="0"></line>
         </svg>
         <div class="time-line-block">
-          <div class="time">
+          <div class="time LatinaEssential">
             2015<br>
             2016
           </div>
@@ -227,7 +225,7 @@
           <line fill="none" stroke="#FFF" stroke-dasharray="5" x1="0" y1="0" x2="100%" y2="0"></line>
         </svg>
         <div class="time-line-block">
-          <div class="time">2017</div>
+          <div class="time LatinaEssential">2017</div>
           <div class="right">
             <div class="right-block flex-l2-m1-">
               <div class="img"><img style="width: 130%;" src="/assets/img/main/5-3.png" alt=""></div>
@@ -247,7 +245,7 @@
           <line fill="none" stroke="#FFF" stroke-dasharray="5" x1="0" y1="0" x2="100%" y2="0"></line>
         </svg>
         <div class="time-line-block">
-          <div class="time">2018</div>
+          <div class="time LatinaEssential">2018</div>
           <div class="right">
             <div class="right-block flex-l2-m1-">
               <div class="img"><img src="/assets/img/main/5-4.png" alt=""></div>
@@ -303,7 +301,7 @@
       <div class="content flex-l2-s1-">
         <div class="left">
           <div class="h1">勇敢建個校一年要投入多少錢?</div>
-          <h2>算一算大概2000多萬...</h2>
+          <h2>算一算大概 2000 多萬...</h2>
           <div class="s7-list"><b>人事費用</b> = 4,800,000 元<span>8 - 9（設計師、專案、企劃、文案編輯、行政人員...）</span></div>
           <div class="s7-list"><b>博覽會舉辦費用</b> = 12,000,000 元<span>1 年 1 次（場地租賃費、場地建置、文宣商品製作、宣傳與記錄素材製作、活動執行與人力費用...）</span></div>
           <div class="s7-list"><b>實體空間運營</b> = 3,600,000 元<span>包含空間租金、人事行政費（聘雇 4 人專職營運）、其他營運雜支（含水電）</span></div>
@@ -428,7 +426,7 @@
             
           </p>
           <div class="bottom">
-            <div class="price">$2,480</div><a class="buy-btn">支持建校</a>
+            <div class="price LatinaEssential">$2,480</div><a class="buy-btn" href="https://zashare.backme.tw/cashflow/checkout?locale=zh-TW&amp;project_id=650&amp;reward_id=3281">支持建校</a>
           </div>
         </div>
       </div>
@@ -443,7 +441,7 @@
             
           </p>
           <div class="bottom">
-            <div class="price">$10,400<span>(平均每人 $2,080)</span></div><a class="buy-btn">支持建校</a>
+            <div class="price LatinaEssential">$10,400<span>(平均每人 $2,080)</span></div><a class="buy-btn" href="https://zashare.backme.tw/cashflow/checkout?locale=zh-TW&amp;project_id=650&amp;reward_id=3282">支持建校</a>
           </div>
         </div>
       </div>
@@ -456,7 +454,7 @@
             
           </p>
           <div class="bottom">
-            <div class="price">$19,800<span>(平均每人 $1,980)</span></div><a class="buy-btn">支持建校</a>
+            <div class="price LatinaEssential">$19,800<span>(平均每人 $1,980)</span></div><a class="buy-btn" href="https://zashare.backme.tw/cashflow/checkout?locale=zh-TW&amp;project_id=650&amp;reward_id=3283">支持建校</a>
           </div>
         </div>
       </div>
@@ -472,7 +470,7 @@
             
           </p>
           <div class="bottom">
-            <div class="price">$100,000<span>(限 10 名)</span></div><a class="buy-btn">支持建校</a>
+            <div class="price LatinaEssential">$100,000<span>(限 10 名)</span></div><a class="buy-btn" href="https://zashare.backme.tw/cashflow/checkout?locale=zh-TW&amp;project_id=650&amp;reward_id=3284">支持建校</a>
           </div>
         </div>
       </div>
@@ -492,8 +490,9 @@
       
     </footer>
   </body>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
   <script src="/assets/js/vendor/jquery-2.1.4.min.js"></script>
   <script src="/assets/js/vendor/slider.js"></script>
   <script src="/assets/js/index.js"></script>
+  <script src="/assets/js/backmeApi.js"></script>
 </html>

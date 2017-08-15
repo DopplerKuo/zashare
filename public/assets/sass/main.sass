@@ -1,4 +1,5 @@
 @charset "UTF-8"
+@import 'http://fonts.googleapis.com/earlyaccess/notosanstc.css'
 // ========= 客製化區 =========
 @import 'custom_style/variables' // 變數
 // ========= base =========
@@ -22,9 +23,18 @@
 @import 'layout/10'
 @import 'layout/11'
 
+@font-face 
+	font-family: LatinaEssential
+	src: url('../fonts/LatinaEssential-Bold.otf') format("truetype")
+
+.LatinaEssential
+	font-family: LatinaEssential, B Nazanin, Tahoma !important
+
 body 
 	background-color: $b
 	color: #fff
+	font-family: $p400
+	font-weight: 400
 
 section, header 
 	position: relative
@@ -119,6 +129,7 @@ footer
 	transform-origin: 100% 100%
 
 #bar.calm_down
+	background-color: $b
 	transform-origin: 100% 0%
 
 #nav.calm_down

@@ -17,10 +17,10 @@ html
 
     #bar
       .bar-chart-wrap
-        .b-pg-main(style="width: 56%")
+        .b-pg-main(:style="'width:' + ticketObj.progressPercentage")
         .b-pg-bg
       .text.
-        已募資<b>56%</b>學生證倒數<b>1000/2017</b>張
+        已募資<b>{{ ticketObj.progressPercentage }}</b>學生證倒數<b>{{ 2017 - ticketObj.count }}/2017</b>張
 
     #nav
       a.btn 為什麼建校？
@@ -81,10 +81,8 @@ html
               做了這麼多努力<br>
               投了那麼多資源<br>
               但我們仍然陷在僵化教育的困境中?
-          .s3-info.
-            285,300,000,000<br>
-            4000,000,000<br>
-            50,000,000,000<br>
+          .s3-info.LatinaEssential(style="text-align: left").
+            285,300,000,000<br>4000,000,000<br>50,000,000,000<br>
             
 
         .s3-scroll-block.flex-l2-s1-ac-
@@ -170,7 +168,7 @@ html
           line(fill="none", stroke="#FFF", stroke-dasharray="5", x1="0", y1="0", x2="100%", y2="0")
 
         .time-line-block
-          .time.
+          .time.LatinaEssential.
             2015<br>
             2016
           .right
@@ -199,7 +197,7 @@ html
           line(fill="none", stroke="#FFF", stroke-dasharray="5", x1="0", y1="0", x2="100%", y2="0")
 
         .time-line-block
-          .time.
+          .time.LatinaEssential.
             2017
           .right
             .right-block.flex-l2-m1-
@@ -216,7 +214,7 @@ html
           line(fill="none", stroke="#FFF", stroke-dasharray="5", x1="0", y1="0", x2="100%", y2="0")
 
         .time-line-block
-          .time.
+          .time.LatinaEssential.
             2018
           .right
             .right-block.flex-l2-m1-
@@ -263,7 +261,7 @@ html
       .content.flex-l2-s1-
         .left
           .h1 勇敢建個校一年要投入多少錢?
-          h2 算一算大概2000多萬...
+          h2 算一算大概 2000 多萬...
           .s7-list
             <b>人事費用</b> = 4,800,000 元
             span 8 - 9（設計師、專案、企劃、文案編輯、行政人員...）
@@ -382,8 +380,8 @@ html
             二、雜學校作業包 *1 (原價值 $750)
           
           .bottom
-            .price $2,480
-            a.buy-btn 支持建校
+            .price.LatinaEssential $2,480
+            a(href="https://zashare.backme.tw/cashflow/checkout?locale=zh-TW&project_id=650&reward_id=3281").buy-btn 支持建校
 
       .rw-block.blue
         .left.img-bg-contain(style="background-image: url('/assets/img/main/rw-2.png')")
@@ -397,9 +395,9 @@ html
             二、雜學校作業包 *5 (原價值 $3,750)
           
           .bottom
-            .price $10,400
+            .price.LatinaEssential $10,400
               span (平均每人 $2,080)
-            a.buy-btn 支持建校
+            a(href="https://zashare.backme.tw/cashflow/checkout?locale=zh-TW&project_id=650&reward_id=3282").buy-btn 支持建校
 
 
       .rw-block
@@ -412,9 +410,9 @@ html
             元老回饋內容 *10套 (原價值 $248,000 ):<br> 一、集資加碼優惠版學生證 *10 (原價值 $240,500)<br>二、雜學校作業包 *10(原價值 $7,500)
           
           .bottom
-            .price $19,800
+            .price.LatinaEssential $19,800
               span (平均每人 $1,980)
-            a.buy-btn 支持建校
+            a(href="https://zashare.backme.tw/cashflow/checkout?locale=zh-TW&project_id=650&reward_id=3283").buy-btn 支持建校
 
       .rw-block.blue
         .left.img-bg-contain(style="background-image: url('/assets/img/main/rw-4.png')")
@@ -429,9 +427,9 @@ html
             三、主辦方贈送 100 張單日票券給弱勢兒童
           
           .bottom
-            .price $100,000
+            .price.LatinaEssential $100,000
               span (限 10 名)
-            a.buy-btn 支持建校
+            a(href="https://zashare.backme.tw/cashflow/checkout?locale=zh-TW&project_id=650&reward_id=3284").buy-btn 支持建校
 
     section.sec10
       .content
@@ -446,10 +444,11 @@ html
       © ZaShare 2017 Handcrafted with hard work and love by us
 
 
-  script(src='//cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js')
   script(src='/assets/js/vendor/jquery-2.1.4.min.js')
   script(src='/assets/js/vendor/slider.js')
   script(src='/assets/js/index.js')
+  script(src='/assets/js/backmeApi.js')
             
 
 
