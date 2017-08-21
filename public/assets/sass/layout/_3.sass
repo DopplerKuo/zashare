@@ -1,7 +1,57 @@
-.s3-scroll-block
-	min-height: 50vh
-	position: relative
-	margin: 5% auto
+
+.sec3
+	background-color: $db
+
+	.section-title
+		padding-top: 0
+
+	.s3-scroll-block
+		margin-top: 5%
+		margin-bottom: 5%
+
+		h2
+			font-size: 50px
+			color: $lb
+			line-height: 1
+			text-align: right
+
+			@media screen and (max-width: 992px)
+				font-size: 4.5vw
+
+			@media screen and (max-width: 768px)
+				text-align: left
+
+		h3
+			font-size: 27px
+			line-height: 1
+			padding-top: 1%
+			font-weight: 600
+
+			b
+				font-size: 22px
+				margin-left: 10px
+				font-weight: 400
+			
+.s3-small
+	font-size: 15px
+	text-align: center
+
+.sec3-1
+	text-align: center
+
+	.s3-info
+		font-size: 150px
+		font-weight: 600
+		margin: 5% auto
+
+	h2, h3 
+		text-align: center
+		max-width: 600px
+		margin: auto
+		line-height: 1.7
+
+	h2
+		margin-bottom: 15px
 
 .s3-title
 	line-height: 1.5
@@ -11,24 +61,6 @@
 	@media screen and (max-width: 500px)
 		font-size: 24px
 
-.s3-info
-	font-size: 5vw
-	line-height: 1
-	font-family: $p600
-	font-weight: 600
-	color: #fff
-	opacity: .2
-	text-align: right
-
-.s3-scroll-block:nth-of-type(2)
-
-	.s3-info
-		font-size: 10vw
-		text-align: left
-
-.s3-scroll-block:nth-of-type(3)
-	background-color: $db
-	max-width: 100%;
 
 .s3-cards
 	margin-top: 50px

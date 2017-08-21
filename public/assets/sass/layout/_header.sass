@@ -67,3 +67,26 @@
 			top: 0
 			right: 0
 			width: 160px
+
+
+.header-arrow
+	position: absolute
+	bottom: 10px
+	left: 0
+	right: 0
+	margin: auto
+	width: 60px
+	animation: slideDown 1.5s ease 0s infinite both
+
+	img
+		width: 100%
+
+@keyframes slideDown
+	0%
+		opacity: 0
+		transform: translateY(0)
+	40%
+		opacity: 1
+	100%
+		opacity: 0
+		transform: translateY(10px)
