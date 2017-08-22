@@ -94,5 +94,11 @@ $(document).ready(function() {
 	  distance		: '100px',
 	  origin      : 'right',
 	});
+	sr.reveal('.reveal-top-500', {
+	  duration    : 1000,
+	  delay       : 200,
+	  distance		: '100px',
+	  origin      : 'bottom',
+	});
 
 })
