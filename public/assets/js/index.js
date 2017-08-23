@@ -41,6 +41,22 @@ $(document).ready(function() {
   })
 
 
+  //about-scroll
+  $("#call-to-action-btn").click(function() {
+    var goFindIt = $("section.sec9").offset().top;
+    $(document.body).animate({
+      scrollTop: (goFindIt)
+    })
+  });
+
+  $("#nav a.btn").click(function() {
+  	var $t = $(this).attr('data-link')
+    var goFindIt = $("section.sec" + $t).offset().top;
+    $(document.body).animate({
+      scrollTop: (goFindIt)
+    })
+  }); 
+
   // slider
 	$('#header-slider').unslider({
 		autoplay: true,
@@ -100,5 +116,23 @@ $(document).ready(function() {
 	  distance		: '100px',
 	  origin      : 'bottom',
 	});
+
+
+	//pop	
+	$('.pop-btn').click(function() {
+		var $p = $(this).attr('data-popup')
+		console.log($('#popup .content[data-popup="' + $p + '"]'))
+		$('#popup').fadeIn(300)
+		$('#popup .content').removeClass('active')
+		$('#popup .content[data-popup="' + $p + '"]').addClass('active')
+		$('body').css('overflow', 'hidden')
+	})
+
+	$('#popup .close-btn').click(function() {
+		$('#popup').fadeOut(300)
+		$('#popup .content').removeClass('active')
+		$('body').css('overflow', 'auto')
+	})
+
 
 })
