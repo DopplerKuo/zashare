@@ -15,6 +15,11 @@
 		position: absolute
 		top: 0
 		left: 0
+		z-index: 1
+
+		&.on
+			z-index: 2
+			animation: onoff 0.4s ease 0s infinite alternate
 		
 		&:not(.text)
 	    width: 300%
@@ -24,3 +29,14 @@
 			width: 100%
 			position: absolute
 
+
+
+#call-to-action-btn:active
+	.on
+		transform: translate3d(-6%, 6%, 0)
+
+@keyframes onoff
+	0%
+		transform: translate3d(-6%, 5%, 0)
+	100%
+		transform: translate3d(-6%, 7%, 0)
