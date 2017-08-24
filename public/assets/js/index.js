@@ -49,13 +49,18 @@ $(document).ready(function() {
     })
   });
 
-  $("#nav a.btn").click(function() {
+  $("#nav a.btn, #nav-mobile a.btn").click(function() {
+  	$('#nav-mobile .icon, #nav-mobile .nav-content').removeClass('active')
   	var $t = $(this).attr('data-link')
     var goFindIt = $("section.sec" + $t).offset().top;
     $(document.body).animate({
       scrollTop: (goFindIt)
     })
   }); 
+
+  $('#nav-mobile .icon').click(function() {
+  	$('#nav-mobile .icon, #nav-mobile .nav-content').toggleClass('active')
+  })
 
   // slider
 	$('#header-slider').unslider({

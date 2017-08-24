@@ -1,5 +1,6 @@
 .sec9
 	background-color: $b
+	overflow: hidden
 
 	.content 
 		max-width: 1280px
@@ -41,6 +42,9 @@
 		.rw-see-more-btn
 			color: $lb
 			margin-bottom: 25px
+
+			@media screen and (max-width: 768px)
+				display: none
 
 		h2
 			color: #003FB1

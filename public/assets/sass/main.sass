@@ -44,6 +44,7 @@ section, header
 	min-height: 100vh
 	height: auto
 	width: 100%
+	overflow-x: hidden
 
 	.content
 		position: relative
@@ -152,3 +153,8 @@ footer
 	#bar.calm_down
 		transform: translateY(0%)
 		opacity: 1
+
+br.m
+	display: none
+	@media screen and (max-width: 768px)
+		display: block
